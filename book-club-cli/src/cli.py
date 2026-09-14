@@ -38,7 +38,7 @@ def start_cli(books: list[Book]) -> list[Book]:
                     change_status(books, title, status)
                     break
                 except ValueError:
-                    print("Unknown command")
+                    print("Unknown status. Please enter read, currently-reading or to-read.")
         elif choice == "6":
             print("Goodbye!")
             return books
